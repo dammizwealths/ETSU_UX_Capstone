@@ -1,0 +1,1004 @@
+
+
+html, body{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    overflow-x: hidden;
+}
+
+.header{
+    /*border:1px solid black;*/
+    height:60px;
+    margin-top:20px;
+
+}
+.navbar{
+    border:1px solid black;
+    width:900px;
+    height:110px;
+    float:right;
+    margin-right:40px;
+}
+
+
+
+/* Styling the navigation menu */
+ul.nav-menu {
+    list-style: none;
+
+    display: flex;
+    float:right;
+    width:500px;
+    margin-right:290px;
+    margin-top:-2px;
+}
+
+ul.nav-menu li {
+    position: relative;
+    font-size: x-large;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+ul.nav-menu li a {
+    display: block;
+    color:#00053E;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-right:1px solid #FFC72C;
+    font-size: 18px;
+}
+
+ul.nav-menu li:hover {
+    background-color: #FFC72C;
+    
+}
+
+/* Styling the dropdown menu */
+ul.nav-menu li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+    font-family: 'Roboto', 'sans-seriff';
+   
+}
+
+ul.nav-menu li:hover ul.dropdown {
+    display: block;
+    width: 195px;
+    top: 100%;
+}
+
+ul.nav-menu li ul.dropdown li {
+    border-top: 1px solid #555;
+    list-style: none; /* Remove bullets */
+}
+
+ul.nav-menu li ul.dropdown li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block; /* Ensure full width for text */
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    font-size: 18px;
+}
+
+ul.nav-menu li ul.dropdown li:first-child {
+    border-top: none;
+}
+
+/* Adding dropdown arrow indicator */
+ul.nav-menu li ul.dropdown::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    border: solid transparent;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent #333 transparent;
+}
+
+/* Apply the same styles for Home, About, and Contact dropdowns */
+ul.nav-menu li#home:hover ul.dropdown,
+ul.nav-menu li#about:hover ul.dropdown,
+ul.nav-menu li#contact:hover ul.dropdown {
+    display: block;
+    width: 160px;
+    top: 100%;
+}
+
+.hr {
+    
+    /*vertical-align: middle;*/
+    margin-top:-20px;
+    margin-left:40px;
+    font-size: 40px;
+    color: #00053E;
+    height:50px;
+   
+}
+
+
+.col-1{
+    /*  border:1px solid black;*/
+    width:500px;
+    height:900px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    margin-left:40px;
+    margin-top:40px;
+  
+}
+.col-2{
+   /* border:1px solid black;*/
+    height:900px;
+}
+
+/*.col-3{
+    border:1px solid black;
+    width:900px;
+    height:900px;
+}
+*/
+
+.col-2 p{
+    font-size: 28px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top:40px;
+}
+
+.subm {
+    margin-left:40px;
+    margin-top:30px;
+}
+.s{
+    border-bottom: 2px solid #000; /* Default border thickness and color */
+    color: #000; /* Default text color */
+    transition: border-bottom 0.3s, color 0.3s; /* Add transitions for smooth hover effect */
+}
+
+.staff{
+    width:350px;
+    background-color: aliceblue;
+    height:50px;
+   
+}
+.staff.active::before {
+    height: 50px; /* Set the thicker border height */
+    background-color: #00f; /* Change the border color */
+}
+
+
+.staff:hover{
+
+    border-bottom: 4px solid #00f; /* Thickened border and new border color on hover */
+    color: #00f; /* Change the text color to match the link anchor color on hover */
+
+}
+
+
+.subm li {
+    font-size: 25px;
+
+}
+
+
+.subm li {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+.parentcolumn-1 {
+  
+    height:50px;
+    margin-top:99px;
+    display:flex;
+}
+
+.column-1 {
+        margin: 40px;;
+}
+
+
+
+/* multiple cards css start here */
+.webinar-grid {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   /* align-items: center;*/
+  }
+  
+  .link-block {
+    position: relative;
+    width: 30%;
+    min-height: 400px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.2s cubic-bezier(.25, .8, .25, 1);
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+  }
+  
+  .link-block:hover {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
+  .link-block .dundas-blue-link {
+    background: #00053E;
+    border: solid 1px rgba(40, 150, 211, 1);
+    padding: 8px 25px;
+    color: #fff!important;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
+    margin-left:-47px;
+  }
+  
+  .link-block .dundas-blue-link:hover {
+    background: #FFC72C;
+    color: #00053E;
+  }
+  
+  .link-block .webinar-image-container {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 0;
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+    z-index: 200;
+  }
+  
+  .link-block:hover .webinar-image-container {
+    top: -20px;
+  }
+  
+  .link-block .dundas-blue-text-long {
+    position: absolute;
+    top: 140px;
+    transition: all 0.8s cubic-bezier(.25, .8, .25, 1);
+    background-color: #f0f0f0;
+    z-index: 100;
+    font-weight: 100;
+    color: #00053E;
+    font-size: 24px;
+    padding: 0 10px;
+    opacity: 1;
+  }
+  
+  .link-block:hover .dundas-blue-text-long {
+    top: -20px;
+    opacity: 0;
+  }
+  
+  .link-block h2 {
+    position: absolute;
+  }
+  
+  .link-block .webinar-content-box {
+    position: relative;
+    padding: 20px;
+    top: -20px;
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+    opacity: 0;
+  }
+  
+  .link-block:hover .webinar-content-box {
+    top: -30px;
+    opacity: 1;
+  }
+
+  .webinar-content-box li {
+    line-height: 0.9rem;
+    font-size:smaller;
+    display: block;
+    text-align: left;
+    white-space: nowrap; 
+  }
+
+  .webinar-content-box p {
+    /*padding: 0 0 20px 0;*/
+    color: #6a6a6a;
+  }
+  
+  .webinar-content-box a {
+    text-decoration: none!important;
+  }
+  
+  .webinar-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .archive {
+    display: none;
+  }
+  
+  
+  /* .webinar-content-box p {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;} */
+  
+  
+  /* TABLET PORTRAIT */
+  
+  @media only screen and (min-width: 569px) and (max-width: 880px) {
+    .link-block {
+      position: relative;
+      width: 45%;
+      max-width: 330px;
+    }
+    .link-block .dundas-blue-text-long {
+      font-size: 22px;
+    }
+  }
+  
+  
+  /* MOBILE LANDSCAPE */
+  
+  @media only screen and (min-width: 0) and (max-width: 568px) {
+    .link-block {
+      position: relative;
+      width: 90%;
+      max-width: 300px;
+    }
+    .link-block .dundas-blue-text-long {
+      font-size: 18px;
+    }
+  }
+  
+  .videoWrapper {
+    height: auto;
+    width: 723px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .videoWrapper iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+/* multiple cards css end here */
+
+
+
+
+/* Left Nav CSS Codes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #cfd8e3;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Menu Header */
+  .menu-header {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    cursor: pointer;
+    font-family: roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  /* Dropdown Arrow */
+  .dropdown-arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    color: #000; /* Black arrow */
+  }
+  
+  /* Hide Checkbox */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Dropdown Functionality */
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+    border-top: 1px solid #ffffff;
+  }
+  
+  .menu li {
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 12px;
+  }
+  
+  /* Show Menu on Checkbox Check */
+  .menu-toggle:checked + label + .menu {
+    display: block;
+  }
+  
+  /* Rotate Arrow When Expanded */
+  .menu-toggle:checked + label .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Link Styling */
+  .menu a {
+    text-decoration: none;
+    color: #0073aa;
+    font-size: 0.9rem;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease;
+    font-size: 12px;
+  }
+  
+  /* Hover Effect with Thick Line */
+  .menu a:hover {
+    color: #005a8d;
+  }
+  
+  .menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #0073aa;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .menu a:hover::after {
+    width: 100%; /* Thick underline expands across the full width on hover */
+  }
+  
+  /* Submenu Styling */
+  .sub-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+  
+  }
+  
+  .sub-menu li {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  /* Show Submenu on Checkbox Check */
+  #student-adv-toggle:checked + label + .sub-menu,
+  #department-info-toggle:checked + label + .sub-menu,
+  #academic-outreach-toggle:checked + label + .sub-menu {
+    display: block;
+  }
+  
+  /* Rotate Arrow for Each Section */
+  #student-adv-toggle:checked + label .dropdown-arrow,
+  #department-info-toggle:checked + label .dropdown-arrow,
+  #academic-outreach-toggle:checked + label .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Submenu Link Styling (Thick Underline Hover Effect for Each Option) */
+  .sub-menu a {
+    text-decoration: none;
+    color: #0073aa;
+    font-size: 0.8rem;
+    display: block;
+    padding: 10px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .sub-menu a:hover {
+    color: #00053E;
+  }
+  
+  .sub-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #0073aa;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .sub-menu a:hover::after {
+    width: 100%; /* Thick underline expands across the full width on hover */
+  }
+  .contatusnow{
+    list-style-type: none;
+  }
+
+/* Left Nav CSS Codes ends */
+
+
+
+
+
+  /* column-2 CSS Codes begin */
+
+  .column-2{
+    margin-left: -30px;
+  }
+
+  body {
+    font-family: "Oxygen", sans-serif;
+    color: #050505;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .main {
+    max-width: 800px;
+    margin-left:34px;
+    margin-top:26px;
+
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  .card_image {
+    position: relative;
+    max-height: 250px;
+  }
+  
+  .card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card_price {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 0.25rem;
+    background-color: #c89b3f;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .card_price span {
+    font-size: 12px;
+    margin-top: -2px;
+  }
+  
+  .note {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 0.25rem;
+    background-color: #c89b3f;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card_content {
+    position: relative;
+    padding: 16px 12px 32px 24px;
+    margin: 16px 8px 8px 0;
+    max-height: 290px;
+    overflow-y: scroll;
+  }
+  
+  .card_content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .card_content::-webkit-scrollbar-track {
+    box-shadow: 0;
+    border-radius: 0;
+  }
+  
+  .card_content::-webkit-scrollbar-thumb {
+    background: #c89b3f;
+    border-radius: 15px;
+  }
+  
+  .card_title {
+    position: relative;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .card_title::after {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c89b3f;
+    content: "";
+  }
+  
+ 
+  
+  .card_text p {
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .card_text p:last-child {
+    margin: 0;
+  }
+
+
+
+  /* column-2 CSS Codes ends */
+
+
+
+
+  /* flip code css start here */
+  p {
+    margin: 0 0 13px 0;
+  }
+  
+ 
+  .center { text-align: center; }
+  
+  .container {
+    width: 95%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+  
+  .episode {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+  }
+  
+  .episode__number {
+    font-size: 10vw;
+    font-weight: 600;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    height: calc(10vw + 20px);
+    transition: all 0.2s ease-in;
+  }
+  
+  .episode__content {
+    border-top: 2px solid #fff;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    padding: 15px 0;
+  }
+  
+  .episode__content .title {
+    font-weight: 600
+  }
+  
+  .episode__content .story {
+    line-height: 26px;
+  }
+  
+  @media (max-width: 600px) {
+    .episode__content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .episode__content .story {
+      font-size: 15px;
+    }
+  }
+  
+
+  .testimotionals {
+    width:350px;
+     display:inline-block;
+      margin-left:50px;
+      margin-top:50px
+      
+    }
+    
+    
+    .testimotionals .card {
+      
+      position:relative;
+      overflow:hidden;
+      width:350px;
+      margin:0 auto;
+      background:#00053E;
+      padding:20px;
+      box-sizing:border-box;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,.5)
+    }
+    .testimotionals .card .layer {
+      z-index:1;
+      position:absolute;
+      top:calc(100% - 2px);
+      height:100%;
+      width:100%;
+      left:0;
+      background:linear-gradient(to left , #b8a266, #FFC72C);
+      transition:0.5s;
+      
+    }
+    
+    .testimotionals .card .content {
+      z-index:2; 
+      position:relative;
+    }
+    
+    .testimotionals .card:hover  .layer{
+      top:0;
+    }
+    
+    .testimotionals .card .content p {
+      font-size:14px;
+      line-height:24px;
+      color:#fff;
+      
+    }
+    .testimotionals .card .content .image {
+      width:100px; height:100px;
+      margin:0 auto;
+      border-radius:50%;
+      overflow:hidden;
+      border: 4px solid white;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      
+    }
+    
+    .testimotionals .card .conte nt .details h2 {
+    font-size:18px;
+    color:white;
+    }
+    .testimotionals .card .content .details h2 span {
+    font-size:18px;
+    color:purple;
+      transition:0.5s;
+    }
+    .testimotionals .card:hover .content .details h2 span {
+      color:white;
+      position:relative
+    }
+    
+  
+  .footer{
+    border:1px solid black;
+    height:250px;
+    background-color: #00053E;
+    margin-left:-500px;
+    width: 1500px;
+    padding-bottom: 0px;
+   
+
+  }
+
+  .scholarship-content{
+   /* border: 1px solid black;*/
+    margin-left:40px;
+  }
+
+
+
+
+
+
+
+
+  .aid-offer-wrapper {
+    max-width: 800px;
+    width: 100%;
+}
+
+.aid-offer-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.aid-offer-title {
+    display: block;
+    padding: 15px;
+    background: #00053E;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.aid-offer-title:hover {
+    background: #FFC72C;
+}
+
+.aid-offer-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 15px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .aid-offer-content {
+    max-height: 500px; /* Adjust as needed */
+    padding: 15px;
+}
+
+.aid-offer-content p, .aid-offer-content ul {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aid-offer-content ul {
+    padding-left: 20px;
+}
+
+.aid-offer-content ul li {
+    margin-bottom: 5px;
+}
+
+.search{
+
+  width:10px;
+  height:30px;
+  float:right;
+  margin-right:-670px;
+  margin-top:10px;
+
+}
+
+.search input{
+  width:100px;
+  border-radius: 8px;
+}
+
+
+
+
+  
+
+
+  
+
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+h1 {
+  color: #333;
+}
+p {
+  font-size: 16px;
+  color: #555;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  background: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #0056b3;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #007bff;
+  padding: 10px;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e8e8e8;
+  border-radius: 10px;
+}
+
+.compute{
+  font-size: 60px;
+  margin-left:400px;
+  margin-top:19px;
+  position: absolute;
+}
